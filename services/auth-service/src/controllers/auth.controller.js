@@ -42,7 +42,7 @@ const AuthController = {
         try {
             const { email, password } = req.body;
             if (!email || !password)
-                return res.status(422).json({ message: 'Email dan password wajib diisi.' });
+                return res.status(422).json({ message: 'Tolong isi email dan passwordnya.' });
 
             const user = await UserModel.findByEmail(email);
             if (!user || !user.password)
@@ -54,7 +54,7 @@ const AuthController = {
             const accessToken  = generateAccessToken(user);
             const refreshToken = generateRefreshToken(user.id);
 
-            // Expired 7 hari
+            // Token expirednya 7 hari
             const expiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
             await TokenModel.saveRefreshToken(user.id, refreshToken, expiresAt);
 
@@ -112,7 +112,7 @@ const AuthController = {
                     const decoded = jwt.verify(token, jwtConfig.secret);
                     const exp = new Date(decoded.exp * 1000);
                     await TokenModel.blacklistJTI(decoded.jti, exp);
-                } catch { /* kosong dulu */ }
+                } catch { /* token expired, kosong/abaikan */ }
             }
             
             if (refresh_token) await TokenModel.revokeRefreshToken(refresh_token);
