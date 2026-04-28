@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require('express');
-const cors    = require('cors');
+const cors = require('cors');
 const authRoutes = require('./routes/auth.routes');
 
 const app  = express();
@@ -13,4 +13,4 @@ app.use('/api/auth', authRoutes);
 
 app.get('/health', (_req, res) => res.json({ status: 'ok', service: 'auth-service' }));
 
-app.listen(PORT, () => console.log(`Auth Service berjalan pada port ${PORT}`));
+app.listen(PORT, () => console.log(`Auth service berjalan di port ${PORT}`));
