@@ -92,4 +92,18 @@ module.exports = {
             res.status(500).json({ message: e.message}); 
         }
     },
+
+    async remove(req, res) {
+        try {
+            const d = await DispositionModel.findById(req.params.id);
+
+            if (!d) 
+                return res.status(404).json({ message: 'Disposisi tidak ada.' });
+
+            // req diterima, dan tidak ada data yang dikembalikan jadinya 204
+            await DispositionModel.delete(req.params.id);
+            return res.status(204).send(); 
+
+        } catch (e) { res.status(500).json({message: e.message }); }
+    },
 };

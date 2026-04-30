@@ -67,6 +67,11 @@ const DispositionModel = {
         
         return rows;
     },
+
+    // hapus
+    async delete(id) {
+        await db.query('DELETE FROM dispositions WHERE id=?', [id]);
+    },
 };
 
 module.exports = DispositionModel;
