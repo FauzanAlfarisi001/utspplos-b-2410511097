@@ -26,7 +26,7 @@ app.use((err, _req, res, _next) => {
 // cek/monitoring gateway
 app.get('/health', (_req, res) => res.json({
     status: 'ok',
-    service: 'api-gateway',
+    service: 'gateway',
     routing: {
         '/api/auth': 'auth-service:3001',
         '/api/complaints': 'complaint-service:8080',

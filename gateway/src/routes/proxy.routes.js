@@ -1,5 +1,6 @@
 const {createProxyMiddleware} = require('http-proxy-middleware');
 const router = require('express').Router();
+const requireRole = require('../middlewares/roleGuard.middleware');
 require('dotenv').config();
 
 const AUTH_URL = process.env.AUTH_SERVICE_URL;
@@ -17,7 +18,18 @@ function proxy(target, pathRewrite) {
 }
 
 router.use('/api/auth', proxy(AUTH_URL));
+
+// admin
+router.delete('/api/complaints/:id',requireRole('admin'), proxy(COMPLAINT_URL));
+router.post('/api/dispositions/units', requireRole('admin'), proxy(DISPOSITION_URL));
+
+// admin dan staff
+router.post('/api/categories',requireRole('admin', 'staff'),proxy(COMPLAINT_URL));
+router.post('/api/dispositions', requireRole('admin', 'staff'), proxy(DISPOSITION_URL));
+
 router.use('/api/complaints', proxy(COMPLAINT_URL));
+router.use('/api/categories', proxy(COMPLAINT_URL));
+
 router.use('/api/dispositions', proxy(DISPOSITION_URL));
 router.use('/api/notifications', proxy(NOTIFICATION_URL));
 

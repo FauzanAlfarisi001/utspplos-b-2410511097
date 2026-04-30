@@ -30,9 +30,9 @@ module.exports = async function jwtValidation(req, res, next) {
         const { data } = await axios.get(`${process.env.AUTH_SERVICE_URL}/api/auth/verify`,{ headers:{Authorization: header}});
 
         // catat data user
-        req.headers['X-User-Id'] = String(data.user.id);
-        req.headers['X-User-Role'] = data.user.role;
-        req.headers['X-User-Email'] = data.user.email;
+        req.headers['x-user-id'] = String(data.user.id);
+        req.headers['x-user-role'] = data.user.role;
+        req.headers['x-user-email'] = data.user.email;
         next();
     } catch (err) {
         const status = err.response?.status||401;
