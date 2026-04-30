@@ -4,6 +4,7 @@ const { v4: uuidv4 } = require('uuid');
 const jwtConfig = require('../config/jwt');
 const UserModel = require('../models/user.model');
 const TokenModel = require('../models/token.model');
+const db = require('../config/database');
 require('dotenv').config();
 
 const GITHUB_CLIENT_ID = process.env.GITHUB_CLIENT_ID;
@@ -70,12 +71,18 @@ const OAuthController = {
                 avatar_url: ghUser.avatar_url,
                 });
                 user = await UserModel.findById(newId);
+
+            } else if (!user.oauth_provider) {
+                await db.query('UPDATE users SET oauth_provider=?, oauth_id=?, avatar_url=? WHERE id=?',['github', String(ghUser.id), ghUser.avatar_url, user.id]);
+
+                // refresh
+                user = await UserModel.findById(user.id); 
             }
 
             const accessToken = generateAccessToken(user);
             const refreshToken = generateRefreshToken(user.id);
             const expiresAt = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000);
-            
+
             await TokenModel.saveRefreshToken(user.id, refreshToken, expiresAt);
 
             res.redirect(`${FRONTEND_URL}/oauth/callback?access_token=${accessToken}&refresh_token=${refreshToken}`);

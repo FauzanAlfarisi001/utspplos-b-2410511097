@@ -7,7 +7,7 @@ const UserModel = {
     },
 
     async findById(id) {
-        const [rows] = await db.query('SELECT id,username,email,full_name,avatar_url,role,oauth_provider FROM users WHERE id = ?', [id]);
+        const [rows] = await db.query('SELECT id,username,email,full_name,avatar_url,role,oauth_provider,created_at FROM users WHERE id = ?', [id]);
         return rows[0] || null;
     },
 

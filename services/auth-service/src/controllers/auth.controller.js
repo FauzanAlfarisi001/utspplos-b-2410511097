@@ -155,7 +155,19 @@ const AuthController = {
     },
 
     async me(req, res) {
-        return res.json({ user: req.user });
+        return res.json({
+            statusCode: 200,
+            user: {
+                id: req.user.id,
+                username: req.user.username,
+                email: req.user.email,
+                full_name: req.user.full_name,
+                avatar_url: req.user.avatar_url || null,   
+                role: req.user.role,
+                oauth_provider: req.user.oauth_provider || null,
+                created_at: req.user.created_at,
+            }
+        });
     },
 };
 

@@ -12,6 +12,17 @@ app.use(rateLimitMiddleware);
 app.use(jwtValidation);
 app.use(proxyRoutes);
 
+// kalau endpointnnya salah/tidak ada
+app.use((_req, res) => {
+    res.status(404).json({message: 'Endpoint tidak ada.'});
+});
+
+// error dari kode/database gatewaynya
+app.use((err, _req, res, _next) => {
+    console.error(err.stack);
+    res.status(500).json({message: 'Error gateway internal.', error: err.message});
+});
+
 // cek/monitoring gateway
 app.get('/health', (_req, res) => res.json({
     status: 'ok',
