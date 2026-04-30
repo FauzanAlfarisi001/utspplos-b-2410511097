@@ -52,6 +52,9 @@ module.exports = {
             if (!complaintResp || complaintResp.status !== 200)
                 return res.status(404).json({ message: 'Pengaduan tidak ditemukan di complaint service.' });
 
+            if (deadline && isNaN(Date.parse(deadline)))
+                return res.status(422).json({ message: 'Format deadline yang kamu input tidak valid, tulis deadline dalam formal tanggal ISO 8601.'});
+
             // simpan db
             const id = await DispositionModel.create({
                 complaint_id, to_unit_id, assigned_by: req.user.id, assigned_to, note, deadline,

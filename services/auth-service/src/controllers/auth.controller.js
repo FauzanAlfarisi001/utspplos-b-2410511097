@@ -30,6 +30,14 @@ const AuthController = {
             if (!username || !email || !password || !full_name)
                 return res.status(422).json({ message: 'Semua data wajib diisi.' });
 
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if (!emailRegex.test(email))
+                return res.status(422).json({ message: 'Format email yang kamu berikan tidak valid.' });
+
+            if (password.length < 8)
+                return res.status(422).json({ message: 'Password paling singkat 8 karakter.' });
+
             const existing = await UserModel.findByEmail(email);
 
             if (existing) 
