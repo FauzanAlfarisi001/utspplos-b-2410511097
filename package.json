@@ -1,0 +1,32 @@
+{
+  "name": "utspplos-b-2410511097",
+  "version": "1.0.0",
+  "description": "Microservice Student Complaint System",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "dev:auth": "cd services/auth-service && npm run dev",
+    "dev:complaint": "cd services/complaint-service && php spark serve --port 8080",
+    "dev:disposition": "cd services/disposition-service && npm run dev",
+    "dev:notification": "cd services/notification-service && npm run dev",
+    "dev:gateway": "cd gateway && npm run dev",
+    "dev": "concurrently \"npm run dev:auth\" \"npm run dev:complaint\" \"npm run dev:disposition\" \"npm run dev:notification\" \"npm run dev:gateway\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FauzanAlfarisi001/utspplos-b-2410511097.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/FauzanAlfarisi001/utspplos-b-2410511097/issues"
+  },
+  "homepage": "https://github.com/FauzanAlfarisi001/utspplos-b-2410511097#readme",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
