@@ -11,7 +11,7 @@ class ComplaintController extends ResourceController
     use ResponseTrait;
     
     protected $format = 'json';
-    private ComplaintModel $model;
+    protected $model;
     private ComplaintLogModel $logModel;
     private ComplaintResponseModel $responseModel;
 
@@ -22,11 +22,11 @@ class ComplaintController extends ResourceController
         $this-> responseModel = new ComplaintResponseModel();
     }
 
-    // GET /api/complaints?page=1&per_page=10&status=submitted&type=akademik mendapatkan data komplen untuk pagination 10 per halaman + filter
+    // GET /api/complaints?page=1&per_page=3&status=submitted&type=akademik mendapatkan data komplen untuk pagination 10 per halaman + filter
     public function index()
     {
         $page = (int)($this-> request-> getGet('page') ?? 1);
-        $perPage = (int)($this-> request-> getGet('per_page') ?? 10);
+        $perPage = (int)($this-> request-> getGet('per_page') ?? 3);
         $perPage = min($perPage, 100);
 
         $filters = [

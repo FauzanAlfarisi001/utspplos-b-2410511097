@@ -11,12 +11,12 @@ const PUBLIC_PATHS = [
 ];
 
 // filter req yg publik biar gk jwt
-function isPublic(method, path) {
-    return PUBLIC_PATHS.some(p =>p.method === method && path.startsWith(p.path));
+function isPublic(method, url) {
+    return PUBLIC_PATHS.some(p =>p.method === method && url.startsWith(p.path));
 }
 
 module.exports = async function jwtValidation(req, res, next) {
-    if (isPublic(req.method, req.path)) 
+    if (isPublic(req.method, req.originalUrl)) 
         return next();
 
     // ambil token dari header
