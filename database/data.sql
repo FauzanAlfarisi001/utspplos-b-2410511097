@@ -184,10 +184,10 @@ INSERT INTO dispositions (complaint_id, to_unit_id, assigned_by, note, status, d
 
 USE db_notification;
 INSERT INTO notifications (user_id, complaint_id, type, title, message) VALUES
-(4, 1, 'status_change', 'Pengaduan Diterima', 'Pengaduan TKT-2024-001 Anda sudah diterima dan sedang diproses.'),
-(5, 2, 'status_change', 'Pengaduan Diproses', 'Pengaduan TKT-2024-002 sedang dalam proses penanganan.'),
-(6, 3, 'status_change', 'Pengaduan Selesai', 'Pengaduan TKT-2024-003 Anda telah selesai. Silakan beri rating.'),
-(4, 4, 'disposition', 'Pengaduan Didisposisikan', 'Pengaduan TKT-2024-004 telah diteruskan ke bagian akademik.');
+(4, 1, 'status_change', 'Pengaduan Diterima', 'Pengaduan TKT-2026-001 Anda sudah diterima dan sedang diproses.'),
+(5, 2, 'status_change', 'Pengaduan Diproses', 'Pengaduan TKT-2026-002 sedang dalam proses penanganan.'),
+(6, 3, 'status_change', 'Pengaduan Selesai', 'Pengaduan TKT-2026-003 Anda telah selesai. Silakan beri rating.'),
+(4, 4, 'disposition', 'Pengaduan Didisposisikan', 'Pengaduan TKT-2026-004 telah diteruskan ke bagian akademik.');
 
 INSERT INTO ratings (complaint_id, user_id, score, feedback) VALUES
 (3, 6, 4, 'Terima kasih, masalah beasiswa sudah diselesaikan, akan saya belikan hal yang bermanfaat.');
