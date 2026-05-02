@@ -8,6 +8,7 @@ const PUBLIC_PATHS = [
     { method: 'POST', path: '/api/auth/refresh'},
     { method: 'GET', path: '/api/auth/github'},
     { method: 'GET', path: '/api/auth/github/callback'},
+    { method: 'GET', path: '/health'}
 ];
 
 // filter req yg publik biar gk jwt

@@ -26,7 +26,7 @@ function proxy(target, basePath) {
 router.use('/api/auth', proxy(AUTH_URL, '/api/auth'));
 
 // admin
-router.delete('/api/complaints/:id',requireRole('admin'), proxy(COMPLAINT_URL, '/api/complaints'));
+router.delete('/api/complaints/:id',requireRole('admin'), proxy(COMPLAINT_URL, '/api/complaints')); // delete gak motong bagian prefix depan
 router.post('/api/dispositions/units', requireRole('admin'), proxy(DISPOSITION_URL, '/api/dispositions'));
 
 // admin dan staff
