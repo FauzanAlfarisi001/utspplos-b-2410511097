@@ -6,9 +6,9 @@ const COMPLAINT_URL = process.env.COMPLAINT_SERVICE_URL;
 
 module.exports = {
     async index(req, res) {
-        // page 10 data per page
+        // page 3 data per page
         const page = parseInt(req.query.page || 1);
-        const perPage = parseInt(req.query.per_page|| 10);
+        const perPage = parseInt(req.query.per_page|| 3);
 
         // filter
         const filters = {complaint_id: req.query.complaint_id,status: req.query.status, to_unit_id: req.query.to_unit_id,};

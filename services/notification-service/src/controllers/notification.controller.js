@@ -3,7 +3,7 @@ module.exports = {
     async index(req, res) {
         // paginationnya
         const page = parseInt(req.query.page || 1);
-        const perPage = parseInt(req.query.per_page|| 10);
+        const perPage = parseInt(req.query.per_page|| 3);
         const result = await NotificationModel.findByUser(req.user.id, page, perPage);
         res.json({ statusCode:200, meta:{ page, per_page:perPage, total:result.total, total_pages:Math.ceil(result.total/perPage)}, data:result.data});
     },

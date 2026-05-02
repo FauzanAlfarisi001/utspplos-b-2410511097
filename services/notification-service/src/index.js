@@ -7,14 +7,27 @@ const PORT = process.env.PORT || 3003;
 app.use(cors());
 app.use(express.json());
 
+app.use('/api/notifications', require('./routes/notification.routes'));
+
+app.get('/health', (req, res) => {
+    if (req.query.fail === 'true') {
+        return res.status(500).json({
+            status: 'error',
+            service: 'gateway'
+        });
+    }
+
+    res.json({
+        status: 'ok',
+        service: 'notification-service'
+    });
+});
+
 app.use((_req, res) => res.status(404).json({message: 'Endpoint itu tidak ada.'}));
 
 app.use((err, _req, res, _next) => {
     console.error(err.stack);
     res.status(500).json({message: 'Error dari internal server.'});
 });
-
-app.use('/api/notifications', require('./routes/notification.routes'));
-app.get('/health', (_req, res) => res.json({ status: 'ok', service: 'notification-service'}));
 
 app.listen(PORT, () => console.log(`Notification service berjalan di port ${PORT}`));
