@@ -1,0 +1,2016 @@
+{
+  "info": {
+    "_postman_id": "cb148a5f-2825-4e15-81bb-f92a270f47e4",
+    "name": "collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "45040467",
+    "_collection_link": "https://go.postman.co/collection/45040467-cb148a5f-2825-4e15-81bb-f92a270f47e4?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "auth",
+      "item": [
+        {
+          "name": "http://localhost:3000/api/auth/register",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc1NDQxMTI1LCJleHAiOjE3NzU0NDQ3MjV9.gXMXdQdb-Q6XaFBY12SYhn9F-VWCo2iAkX4Roi_h-dc",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"admin001@upnvj.ac.id\",\r\n  \"password\": \"password\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/auth/login",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc1NDQxMTI1LCJleHAiOjE3NzU0NDQ3MjV9.gXMXdQdb-Q6XaFBY12SYhn9F-VWCo2iAkX4Roi_h-dc",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"admin001@upnvj.ac.id\",\r\n  \"password\": \"password\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/auth/login",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc1NDQxMTI1LCJleHAiOjE3NzU0NDQ3MjV9.gXMXdQdb-Q6XaFBY12SYhn9F-VWCo2iAkX4Roi_h-dc",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"2410511097fauzan@upnvj.ac.id\",\r\n  \"password\": \"password123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/auth/login",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc1NDQxMTI1LCJleHAiOjE3NzU0NDQ3MjV9.gXMXdQdb-Q6XaFBY12SYhn9F-VWCo2iAkX4Roi_h-dc",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"email\": \"akademik@upnvj.ac.id\",\r\n  \"password\": \"password\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/auth/login",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/auth/refresh",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc1NDQxMTI1LCJleHAiOjE3NzU0NDQ3MjV9.gXMXdQdb-Q6XaFBY12SYhn9F-VWCo2iAkX4Roi_h-dc",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImlhdCI6MTc3NzY0MzMwOCwiZXhwIjoxNzc4MjQ4MTA4fQ.A1Rg3ZVS--yBiIhc8W9eFD9LAqfezkQoo0q6UWL5BL0\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/auth/refresh",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "auth",
+                "refresh"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/auth/github",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzc1NDQxMTI1LCJleHAiOjE3NzU0NDQ3MjV9.gXMXdQdb-Q6XaFBY12SYhn9F-VWCo2iAkX4Roi_h-dc",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImlhdCI6MTc3NzY0MzMwOCwiZXhwIjoxNzc4MjQ4MTA4fQ.A1Rg3ZVS--yBiIhc8W9eFD9LAqfezkQoo0q6UWL5BL0\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/auth/github",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "auth",
+                "github"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/auth/me",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkNjMyMmEzYS02MDQ1LTQ2MGUtYTc4MC01MTIyYTU0NGU1M2YiLCJzdWIiOjgsImVtYWlsIjoiMjQxMDUxMTA5N2ZhdXphbkB1cG52ai5hYy5pZCIsInJvbGUiOiJtYWhhc2lzd2EiLCJpYXQiOjE3Nzc2NDQwNTksImV4cCI6MTc3NzY0NDg5OX0.szoBw-5WFy2-k324mgPnS_2HIyq8fBkfUnofrMxOol8",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"2410511097fauzan@upnvj.ac.id\",\r\n    \"password\": \"password123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/auth/me",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "auth",
+                "me"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/auth/logout",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkNjMyMmEzYS02MDQ1LTQ2MGUtYTc4MC01MTIyYTU0NGU1M2YiLCJzdWIiOjgsImVtYWlsIjoiMjQxMDUxMTA5N2ZhdXphbkB1cG52ai5hYy5pZCIsInJvbGUiOiJtYWhhc2lzd2EiLCJpYXQiOjE3Nzc2NDQwNTksImV4cCI6MTc3NzY0NDg5OX0.szoBw-5WFy2-k324mgPnS_2HIyq8fBkfUnofrMxOol8",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"refresh_token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImlhdCI6MTc3NzY0MzQ5NCwiZXhwIjoxNzc4MjQ4Mjk0fQ.W1oH1hY5tGk2-30BUXz4OgP7BrbbCvmrbp2LeSnlXaU\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/auth/logout",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "auth",
+                "logout"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "complaint",
+      "item": [
+        {
+          "name": "http://localhost:3000/api/complaints?page=2&per_page=3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIxM2NkOWM3YS1kYTAxLTQ2YjAtYTFjZS04YzcyNWI1ZDVhZmYiLCJzdWIiOjgsImVtYWlsIjoiMjQxMDUxMTA5N2ZhdXphbkB1cG52ai5hYy5pZCIsInJvbGUiOiJtYWhhc2lzd2EiLCJpYXQiOjE3Nzc2NDc4NzUsImV4cCI6MTc3NzY0ODcxNX0.Kvlm7eirhTspQs7TQLlWkAx5Lb8v1wbiI4oo2xnQ61s",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"2410511097fauzan@upnvj.ac.id\",\r\n    \"password\": \"password123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/complaints?page=2&per_page=3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "complaints"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "2"
+                },
+                {
+                  "key": "per_page",
+                  "value": "3"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/complaints?page=1&per_page=3&status=submitted",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkMDFjMzIyNS1kYjBhLTRhODQtODBhMC05YzBmY2E4MTliMjciLCJzdWIiOjgsImVtYWlsIjoiMjQxMDUxMTA5N2ZhdXphbkB1cG52ai5hYy5pZCIsInJvbGUiOiJtYWhhc2lzd2EiLCJpYXQiOjE3Nzc2NDkyOTksImV4cCI6MTc3NzY1MDEzOX0.h0uimO6d9dRCniLoM9ltl4ycGG_vme5WD4pqGY4t-fg",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"2410511097fauzan@upnvj.ac.id\",\r\n    \"password\": \"password123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/complaints?page=1&per_page=3&status=submitted",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "complaints"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "per_page",
+                  "value": "3"
+                },
+                {
+                  "key": "status",
+                  "value": "submitted"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/complaints?page=1&per_page=5&priority=high",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkMDFjMzIyNS1kYjBhLTRhODQtODBhMC05YzBmY2E4MTliMjciLCJzdWIiOjgsImVtYWlsIjoiMjQxMDUxMTA5N2ZhdXphbkB1cG52ai5hYy5pZCIsInJvbGUiOiJtYWhhc2lzd2EiLCJpYXQiOjE3Nzc2NDkyOTksImV4cCI6MTc3NzY1MDEzOX0.h0uimO6d9dRCniLoM9ltl4ycGG_vme5WD4pqGY4t-fg",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"2410511097fauzan@upnvj.ac.id\",\r\n    \"password\": \"password123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/complaints?page=1&per_page=5&priority=high",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "complaints"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "per_page",
+                  "value": "5"
+                },
+                {
+                  "key": "priority",
+                  "value": "high"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/complaints?page=1&per_page=2&type=akademik",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkMDFjMzIyNS1kYjBhLTRhODQtODBhMC05YzBmY2E4MTliMjciLCJzdWIiOjgsImVtYWlsIjoiMjQxMDUxMTA5N2ZhdXphbkB1cG52ai5hYy5pZCIsInJvbGUiOiJtYWhhc2lzd2EiLCJpYXQiOjE3Nzc2NDkyOTksImV4cCI6MTc3NzY1MDEzOX0.h0uimO6d9dRCniLoM9ltl4ycGG_vme5WD4pqGY4t-fg",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"2410511097fauzan@upnvj.ac.id\",\r\n    \"password\": \"password123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/complaints?page=1&per_page=2&type=akademik",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "complaints"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "per_page",
+                  "value": "2"
+                },
+                {
+                  "key": "type",
+                  "value": "akademik"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/complaints?page=1&per_page=3&user_id=4",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkMDFjMzIyNS1kYjBhLTRhODQtODBhMC05YzBmY2E4MTliMjciLCJzdWIiOjgsImVtYWlsIjoiMjQxMDUxMTA5N2ZhdXphbkB1cG52ai5hYy5pZCIsInJvbGUiOiJtYWhhc2lzd2EiLCJpYXQiOjE3Nzc2NDkyOTksImV4cCI6MTc3NzY1MDEzOX0.h0uimO6d9dRCniLoM9ltl4ycGG_vme5WD4pqGY4t-fg",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"2410511097fauzan@upnvj.ac.id\",\r\n    \"password\": \"password123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/complaints?page=1&per_page=3&user_id=4",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "complaints"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "per_page",
+                  "value": "3"
+                },
+                {
+                  "key": "user_id",
+                  "value": "4"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/complaints?page=1&per_page=3&search=wifi",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkMDFjMzIyNS1kYjBhLTRhODQtODBhMC05YzBmY2E4MTliMjciLCJzdWIiOjgsImVtYWlsIjoiMjQxMDUxMTA5N2ZhdXphbkB1cG52ai5hYy5pZCIsInJvbGUiOiJtYWhhc2lzd2EiLCJpYXQiOjE3Nzc2NDkyOTksImV4cCI6MTc3NzY1MDEzOX0.h0uimO6d9dRCniLoM9ltl4ycGG_vme5WD4pqGY4t-fg",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"2410511097fauzan@upnvj.ac.id\",\r\n    \"password\": \"password123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/complaints?page=1&per_page=3&search=wifi",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "complaints"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "per_page",
+                  "value": "3"
+                },
+                {
+                  "key": "search",
+                  "value": "wifi"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/complaints/2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0NTYyMmNlNS1jZTdlLTQ0NDgtYmMyNi0yZDZiMjk2OWEzNWEiLCJzdWIiOjgsImVtYWlsIjoiMjQxMDUxMTA5N2ZhdXphbkB1cG52ai5hYy5pZCIsInJvbGUiOiJtYWhhc2lzd2EiLCJpYXQiOjE3Nzc2NTAxODcsImV4cCI6MTc3NzY1MTAyN30.TLpRRazy5PY3XqBITUYOxkWcMFHWUwcr6AZBm0-koOU",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"2410511097fauzan@upnvj.ac.id\",\r\n    \"password\": \"password123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/complaints/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "complaints",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/complaints",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0NTYyMmNlNS1jZTdlLTQ0NDgtYmMyNi0yZDZiMjk2OWEzNWEiLCJzdWIiOjgsImVtYWlsIjoiMjQxMDUxMTA5N2ZhdXphbkB1cG52ai5hYy5pZCIsInJvbGUiOiJtYWhhc2lzd2EiLCJpYXQiOjE3Nzc2NTAxODcsImV4cCI6MTc3NzY1MTAyN30.TLpRRazy5PY3XqBITUYOxkWcMFHWUwcr6AZBm0-koOU",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"user_id\": 4,\r\n    \"category_id\": 1,\r\n    \"title\": \"Makan siang gratis belum turun siang ini\",\r\n    \"description\": \"Kami butuh makan siang gratis!\",\r\n    \"priority\": \"high\",\r\n    \"is_anonymous\": 0\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/complaints",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "complaints"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/complaints/7",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI0NTYyMmNlNS1jZTdlLTQ0NDgtYmMyNi0yZDZiMjk2OWEzNWEiLCJzdWIiOjgsImVtYWlsIjoiMjQxMDUxMTA5N2ZhdXphbkB1cG52ai5hYy5pZCIsInJvbGUiOiJtYWhhc2lzd2EiLCJpYXQiOjE3Nzc2NTAxODcsImV4cCI6MTc3NzY1MTAyN30.TLpRRazy5PY3XqBITUYOxkWcMFHWUwcr6AZBm0-koOU",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"title\": \"Makan Siang\",\r\n    \"description\": \"Kekurangan makan\",\r\n    \"priority\": \"high\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/complaints/7",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "complaints",
+                "7"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/complaints/6/status",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIzNzEyZjkwOC1iZDliLTQyZTctOWUzYi05M2Y4YjlmNDhmYjAiLCJzdWIiOjgsImVtYWlsIjoiMjQxMDUxMTA5N2ZhdXphbkB1cG52ai5hYy5pZCIsInJvbGUiOiJtYWhhc2lzd2EiLCJpYXQiOjE3Nzc2NTExMDYsImV4cCI6MTc3NzY1MTk0Nn0.h8huhlVPSQfqswuCo_FicnUBHk9Ja87PL3twdMRSqxs",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"status\": \"in_review\",\r\n    \"changed_by\": 1,\r\n    \"note\": \"Sedang dikaji peme.\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/complaints/6/status",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "complaints",
+                "6",
+                "status"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/complaints/3",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5MDRkNmYyYy04YWMzLTQyNjUtOWFkMi1jOTVlYjA4NDMyMzgiLCJzdWIiOjEsImVtYWlsIjoiYWRtaW4wMDFAdXBudmouYWMuaWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Nzc2NTIyOTYsImV4cCI6MTc3NzY1MzEzNn0.5GPi32szU0hioLX2xHl1vfx0Xr2qlQ41aWTDGVmFcKs",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"admin001@upnvj.ac.id\",\r\n    \"password\": \"password\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/complaints/3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "complaints",
+                "3"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/complaints/1/responses",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5MDRkNmYyYy04YWMzLTQyNjUtOWFkMi1jOTVlYjA4NDMyMzgiLCJzdWIiOjEsImVtYWlsIjoiYWRtaW4wMDFAdXBudmouYWMuaWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Nzc2NTIyOTYsImV4cCI6MTc3NzY1MzEzNn0.5GPi32szU0hioLX2xHl1vfx0Xr2qlQ41aWTDGVmFcKs",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"responder_id\": 1,\r\n    \"message\": \"Pengaduan anda sedang kami pantau.\",\r\n    \"is_internal\": 0\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/complaints/1/responses",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "complaints",
+                "1",
+                "responses"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/complaints/1/responses",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2YmY2ZmM3NC04ODgwLTQxZGMtODdkMi1hN2FhM2U1MTQyNTMiLCJzdWIiOjEsImVtYWlsIjoiYWRtaW4wMDFAdXBudmouYWMuaWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Nzc2NTMyMzcsImV4cCI6MTc3NzY1NDA3N30.Jkdpe5myMu4M4Vk4HpgOjl6TB-gKyjdWWfJtQ8pA76o",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"admin001@upnvj.ac.id\",\r\n    \"password\": \"password\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/complaints/1/responses",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "complaints",
+                "1",
+                "responses"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/categories",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2YmY2ZmM3NC04ODgwLTQxZGMtODdkMi1hN2FhM2U1MTQyNTMiLCJzdWIiOjEsImVtYWlsIjoiYWRtaW4wMDFAdXBudmouYWMuaWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Nzc2NTMyMzcsImV4cCI6MTc3NzY1NDA3N30.Jkdpe5myMu4M4Vk4HpgOjl6TB-gKyjdWWfJtQ8pA76o",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"admin001@upnvj.ac.id\",\r\n    \"password\": \"password\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/categories",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "categories"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/categories?type=non-akademik",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI2YmY2ZmM3NC04ODgwLTQxZGMtODdkMi1hN2FhM2U1MTQyNTMiLCJzdWIiOjEsImVtYWlsIjoiYWRtaW4wMDFAdXBudmouYWMuaWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Nzc2NTMyMzcsImV4cCI6MTc3NzY1NDA3N30.Jkdpe5myMu4M4Vk4HpgOjl6TB-gKyjdWWfJtQ8pA76o",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"admin001@upnvj.ac.id\",\r\n    \"password\": \"password\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/categories?type=non-akademik",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "categories"
+              ],
+              "query": [
+                {
+                  "key": "type",
+                  "value": "non-akademik"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/categories",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiIwM2UxYmVmNi1hOTZlLTRhOWQtOTU3MS05YTEyZTBhYzFhYzUiLCJzdWIiOjEsImVtYWlsIjoiYWRtaW4wMDFAdXBudmouYWMuaWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Nzc2NTQxNTIsImV4cCI6MTc3NzY1NDk5Mn0.QA6ftCGPhsa6gHuKiLo798wpVj0TbFz_rufuLRBzYbU",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Parkir Siang Gratis\",\r\n    \"type\": \"non-akademik\",\r\n    \"description\": \"Pengaduan terkait parkiran.\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/categories",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "categories"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "disposition",
+      "item": [
+        {
+          "name": "http://localhost:3000/api/dispositions?complaint_id=2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiM2QzZGE2Ny05ZDc1LTRjMzEtOGM3Ni0zZGU3MTIzNzY1ODUiLCJzdWIiOjEsImVtYWlsIjoiYWRtaW4wMDFAdXBudmouYWMuaWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Nzc2NTUwNjksImV4cCI6MTc3NzY1NTkwOX0.tgsm_tu6hG0OXS1FJcXAHt7QJA9VelaRTaUnigYkvSM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"admin001@upnvj.ac.id\",\r\n    \"password\": \"password\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/dispositions?complaint_id=2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "dispositions"
+              ],
+              "query": [
+                {
+                  "key": "complaint_id",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/dispositions?page=1&per_page=3&status=pending",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiM2QzZGE2Ny05ZDc1LTRjMzEtOGM3Ni0zZGU3MTIzNzY1ODUiLCJzdWIiOjEsImVtYWlsIjoiYWRtaW4wMDFAdXBudmouYWMuaWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Nzc2NTUwNjksImV4cCI6MTc3NzY1NTkwOX0.tgsm_tu6hG0OXS1FJcXAHt7QJA9VelaRTaUnigYkvSM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"admin001@upnvj.ac.id\",\r\n    \"password\": \"password\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/dispositions?page=1&per_page=3&status=pending",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "dispositions"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "per_page",
+                  "value": "3"
+                },
+                {
+                  "key": "status",
+                  "value": "pending"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/dispositions?page=1&per_page=3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiM2QzZGE2Ny05ZDc1LTRjMzEtOGM3Ni0zZGU3MTIzNzY1ODUiLCJzdWIiOjEsImVtYWlsIjoiYWRtaW4wMDFAdXBudmouYWMuaWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Nzc2NTUwNjksImV4cCI6MTc3NzY1NTkwOX0.tgsm_tu6hG0OXS1FJcXAHt7QJA9VelaRTaUnigYkvSM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"admin001@upnvj.ac.id\",\r\n    \"password\": \"password\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/dispositions?page=1&per_page=3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "dispositions"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "per_page",
+                  "value": "3"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/dispositions?to_unit_id=3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiM2QzZGE2Ny05ZDc1LTRjMzEtOGM3Ni0zZGU3MTIzNzY1ODUiLCJzdWIiOjEsImVtYWlsIjoiYWRtaW4wMDFAdXBudmouYWMuaWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Nzc2NTUwNjksImV4cCI6MTc3NzY1NTkwOX0.tgsm_tu6hG0OXS1FJcXAHt7QJA9VelaRTaUnigYkvSM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"admin001@upnvj.ac.id\",\r\n    \"password\": \"password\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/dispositions?to_unit_id=3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "dispositions"
+              ],
+              "query": [
+                {
+                  "key": "to_unit_id",
+                  "value": "3"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/dispositions/2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiM2QzZGE2Ny05ZDc1LTRjMzEtOGM3Ni0zZGU3MTIzNzY1ODUiLCJzdWIiOjEsImVtYWlsIjoiYWRtaW4wMDFAdXBudmouYWMuaWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Nzc2NTUwNjksImV4cCI6MTc3NzY1NTkwOX0.tgsm_tu6hG0OXS1FJcXAHt7QJA9VelaRTaUnigYkvSM",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"admin001@upnvj.ac.id\",\r\n    \"password\": \"password\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/dispositions/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "dispositions",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/dispositions",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkMzcwMzIxZS04MGE2LTQ2YzQtYWE0Ni03M2I3OWYwNWJiYzYiLCJzdWIiOjEsImVtYWlsIjoiYWRtaW4wMDFAdXBudmouYWMuaWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Nzc2NTU5OTIsImV4cCI6MTc3NzY1NjgzMn0.6-oCEmvi8vJbS57ym9SkQM1ApKdU85i5VnvA2VAzfbg",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"complaint_id\": 2,\r\n    \"to_unit_id\": 3,\r\n    \"note\": \"Mohon tambahkan 2 wifi serta perbaiki juga wifi yang lama.\",\r\n    \"deadline\": \"2026-05-15 00:00:00\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/dispositions",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "dispositions"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/dispositions/1/status",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkMzcwMzIxZS04MGE2LTQ2YzQtYWE0Ni03M2I3OWYwNWJiYzYiLCJzdWIiOjEsImVtYWlsIjoiYWRtaW4wMDFAdXBudmouYWMuaWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Nzc2NTU5OTIsImV4cCI6MTc3NzY1NjgzMn0.6-oCEmvi8vJbS57ym9SkQM1ApKdU85i5VnvA2VAzfbg",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"status\": \"accepted\",\r\n  \"message\": \"Disposisi sampai di tangan yang tepat.\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/dispositions/1/status",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "dispositions",
+                "1",
+                "status"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/dispositions/1",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkMzcwMzIxZS04MGE2LTQ2YzQtYWE0Ni03M2I3OWYwNWJiYzYiLCJzdWIiOjEsImVtYWlsIjoiYWRtaW4wMDFAdXBudmouYWMuaWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Nzc2NTU5OTIsImV4cCI6MTc3NzY1NjgzMn0.6-oCEmvi8vJbS57ym9SkQM1ApKdU85i5VnvA2VAzfbg",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/dispositions/1",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "dispositions",
+                "1"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/dispositions/units",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkMzcwMzIxZS04MGE2LTQ2YzQtYWE0Ni03M2I3OWYwNWJiYzYiLCJzdWIiOjEsImVtYWlsIjoiYWRtaW4wMDFAdXBudmouYWMuaWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Nzc2NTU5OTIsImV4cCI6MTc3NzY1NjgzMn0.6-oCEmvi8vJbS57ym9SkQM1ApKdU85i5VnvA2VAzfbg",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/dispositions/units",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "dispositions",
+                "units"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/dispositions/units",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkMzcwMzIxZS04MGE2LTQ2YzQtYWE0Ni03M2I3OWYwNWJiYzYiLCJzdWIiOjEsImVtYWlsIjoiYWRtaW4wMDFAdXBudmouYWMuaWQiLCJyb2xlIjoiYWRtaW4iLCJpYXQiOjE3Nzc2NTU5OTIsImV4cCI6MTc3NzY1NjgzMn0.6-oCEmvi8vJbS57ym9SkQM1ApKdU85i5VnvA2VAzfbg",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Sky Parkers Community\",\r\n    \"code\": \"SPC\",\r\n    \"email\": \"skypc1@upnvj.ac.id\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/dispositions/units",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "dispositions",
+                "units"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "notification",
+      "item": [
+        {
+          "name": "http://localhost:3000/api/notifications?page=1&per_page=3",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiZDAzZmJmZS03YTVjLTQ3ODgtYjg4My1iZjhjYjZiZjI2MDAiLCJzdWIiOjQsImVtYWlsIjoiMjIxMDUxMTAyN0BtYWhhc2lzd2EudXBudmouYWMuaWQiLCJyb2xlIjoibWFoYXNpc3dhIiwiaWF0IjoxNzc3NjU3MDI1LCJleHAiOjE3Nzc2NTc4NjV9.aGmM2EfBGL8gSqG0vwYsfdEeUwPMrnUSeckhpRyZTjs",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/notifications?page=1&per_page=3",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "notifications"
+              ],
+              "query": [
+                {
+                  "key": "page",
+                  "value": "1"
+                },
+                {
+                  "key": "per_page",
+                  "value": "3"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/notifications/1/read",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiZDAzZmJmZS03YTVjLTQ3ODgtYjg4My1iZjhjYjZiZjI2MDAiLCJzdWIiOjQsImVtYWlsIjoiMjIxMDUxMTAyN0BtYWhhc2lzd2EudXBudmouYWMuaWQiLCJyb2xlIjoibWFoYXNpc3dhIiwiaWF0IjoxNzc3NjU3MDI1LCJleHAiOjE3Nzc2NTc4NjV9.aGmM2EfBGL8gSqG0vwYsfdEeUwPMrnUSeckhpRyZTjs",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/notifications/1/read",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "notifications",
+                "1",
+                "read"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/notifications/read-all",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "PATCH",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiZDAzZmJmZS03YTVjLTQ3ODgtYjg4My1iZjhjYjZiZjI2MDAiLCJzdWIiOjQsImVtYWlsIjoiMjIxMDUxMTAyN0BtYWhhc2lzd2EudXBudmouYWMuaWQiLCJyb2xlIjoibWFoYXNpc3dhIiwiaWF0IjoxNzc3NjU3MDI1LCJleHAiOjE3Nzc2NTc4NjV9.aGmM2EfBGL8gSqG0vwYsfdEeUwPMrnUSeckhpRyZTjs",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/notifications/read-all",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "notifications",
+                "read-all"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/notifications/ratings",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiZDAzZmJmZS03YTVjLTQ3ODgtYjg4My1iZjhjYjZiZjI2MDAiLCJzdWIiOjQsImVtYWlsIjoiMjIxMDUxMTAyN0BtYWhhc2lzd2EudXBudmouYWMuaWQiLCJyb2xlIjoibWFoYXNpc3dhIiwiaWF0IjoxNzc3NjU3MDI1LCJleHAiOjE3Nzc2NTc4NjV9.aGmM2EfBGL8gSqG0vwYsfdEeUwPMrnUSeckhpRyZTjs",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"complaint_id\": 2,\r\n    \"score\": 3,\r\n    \"feedback\": \"Dilayani dengan sabar dan tabah.\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/notifications/ratings",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "notifications",
+                "ratings"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/notifications/ratings/stats",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiZDAzZmJmZS03YTVjLTQ3ODgtYjg4My1iZjhjYjZiZjI2MDAiLCJzdWIiOjQsImVtYWlsIjoiMjIxMDUxMTAyN0BtYWhhc2lzd2EudXBudmouYWMuaWQiLCJyb2xlIjoibWFoYXNpc3dhIiwiaWF0IjoxNzc3NjU3MDI1LCJleHAiOjE3Nzc2NTc4NjV9.aGmM2EfBGL8gSqG0vwYsfdEeUwPMrnUSeckhpRyZTjs",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"complaint_id\": 2,\r\n    \"score\": 3,\r\n    \"feedback\": \"Dilayani dengan sabar dan tabah.\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/notifications/ratings/stats",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "notifications",
+                "ratings",
+                "stats"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "http://localhost:3000/api/notifications/ratings/complaint/2",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJiZDAzZmJmZS03YTVjLTQ3ODgtYjg4My1iZjhjYjZiZjI2MDAiLCJzdWIiOjQsImVtYWlsIjoiMjIxMDUxMTAyN0BtYWhhc2lzd2EudXBudmouYWMuaWQiLCJyb2xlIjoibWFoYXNpc3dhIiwiaWF0IjoxNzc3NjU3MDI1LCJleHAiOjE3Nzc2NTc4NjV9.aGmM2EfBGL8gSqG0vwYsfdEeUwPMrnUSeckhpRyZTjs",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"complaint_id\": 2,\r\n    \"score\": 3,\r\n    \"feedback\": \"Dilayani dengan sabar dan tabah.\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/api/notifications/ratings/complaint/2",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "api",
+                "notifications",
+                "ratings",
+                "complaint",
+                "2"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

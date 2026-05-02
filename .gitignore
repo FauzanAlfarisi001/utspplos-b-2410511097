@@ -1,0 +1,11 @@
+node_modules/
+#.env
+#.env.*
+.env.example
+.env.example.
+
+services/complaint-service/vendor/
+services/complaint-service/writable/logs/*
+services/complaint-service/writable/cache/*
+!services/complaint-service/writable/logs/.gitkeep
+!services/complaint-service/writable/cache/.gitkeep
