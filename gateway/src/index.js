@@ -4,11 +4,38 @@ const cors = require('cors');
 const rateLimitMiddleware = require('./middlewares/rateLimit.middleware');
 const jwtValidation = require('./middlewares/jwtValidation.middleware');
 const proxyRoutes = require('./routes/proxy.routes');
+const axios = require('axios');
 const app  = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(rateLimitMiddleware);
+
+// cek/monitoring gateway
+app.get('/health', async (_req, res) => {
+    const services = {
+        auth: 'http://localhost:3001/health',
+        disposition: 'http://localhost:3002/health',
+        notification: 'http://localhost:3003/health'
+    };
+
+    const results = {};
+
+    await Promise.all(Object.entries(services).map(async ([name, url]) => {
+        try {
+            const response = await axios.get(url);
+            results[name] = response.data.status || 'ok';
+        } catch (err) {
+            results[name] = 'down';
+        }
+    }));
+
+    res.json({
+        gateway: 'ok',
+        services: results
+    });
+});
+
 app.use(jwtValidation);
 app.use(proxyRoutes);
 
@@ -22,17 +49,5 @@ app.use((err, _req, res, _next) => {
     console.error(err.stack);
     res.status(500).json({message: 'Error gateway internal.', error: err.message});
 });
-
-// cek/monitoring gateway
-app.get('/health', (_req, res) => res.json({
-    status: 'ok',
-    service: 'gateway',
-    routing: {
-        '/api/auth': 'auth-service:3001',
-        '/api/complaints': 'complaint-service:8080',
-        '/api/dispositions': 'disposition-service:3002',
-        '/api/notifications': 'notification-service:3003',
-    }
-}));
 
 app.listen(PORT, ()=>console.log(`API gateway berjalan di port ${PORT}`));
